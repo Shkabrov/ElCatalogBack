@@ -1,0 +1,18 @@
+1)login
+Request: method = login,password;
+Response: method = status(ok/error),error_type;
+2)register
+Request: method,login,password,name,lastName,address;
+Response: method = status(ok/error),error_type;
+3)search
+Request: method = nameBook;
+Response: method,status(ok/error),error_type;
+4)booking
+Request: method;
+Response: method,idBooks,bookName,author,bookYear,statusReservation,status(ok/error),error_type;
+5)reservations
+Request: method = nameBook,date,statusReservation;
+Response: method,idBooks,idClients,bookName,author,bookYear,date,status(ok/error),error_type;
+6)getBooks
+Request: method;
+Response: method,idBooks,idClients,bookName,author,bookYear,statusReservation;
